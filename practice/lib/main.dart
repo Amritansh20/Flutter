@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage>
   void initState() {
     super.initState();
     _iconAnimationcController = new AnimationController(
-        vsync: this, duration: new Duration(milliseconds: 500));
+        value: this, duration: new Duration(milliseconds: 500));
 
     _iconAnimation = new CurvedAnimation(
         parent: _iconAnimationcController, curve: Curves.easeOut);
